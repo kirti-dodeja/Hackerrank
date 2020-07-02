@@ -1,0 +1,20 @@
+static boolean isAnagram(String a, String b) {
+        // Complete the function
+        String a1=a.toLowerCase();
+        String b1=b.toLowerCase();
+        char[] aa=a1.toCharArray();
+        java.util.Arrays.sort(aa);
+        String sorted_a=new String(aa);
+        
+        
+        char[] bb=b1.toCharArray();
+         java.util.Arrays.sort(bb);
+        String sorted_b=new String(bb);
+        
+          if(sorted_a.equals(sorted_b)){
+              return true;
+          }
+          else{
+              return false;
+          }
+    }
